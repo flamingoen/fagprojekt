@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Blackwhirl</class>
+ <widget class="QWidget" name="Blackwhirl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>333</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>313</width>
+        <height>546</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="box_case">
+         <property name="title">
+          <string>&amp;Case</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="pane_load" columnstretch="0,0">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="button_load">
+              <property name="minimumSize">
+               <size>
+                <width>56</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="folder">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="button_close">
+              <property name="minimumSize">
+               <size>
+                <width>56</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="application-exit">
+                <normaloff/>
+               </iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="box_wells">
+         <property name="title">
+          <string>Wells</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Well Type: </string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignLeft">
+             <widget class="QComboBox" name="comboBox_wellType"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list_wells">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="autoScroll">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+            <property name="isWrapping" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="resizeMode">
+             <enum>QListView::Fixed</enum>
+            </property>
+            <property name="viewMode">
+             <enum>QListView::ListMode</enum>
+            </property>
+            <property name="modelColumn">
+             <number>0</number>
+            </property>
+            <property name="currentRow">
+             <number>-1</number>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Show:  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="tristate">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="button_showAll">
+              <property name="text">
+               <string>Show all</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="button_hideAll">
+              <property name="text">
+               <string>Hide all</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="box_fields">
+         <property name="title">
+          <string>Fields</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QListWidget" name="list_fields">
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
